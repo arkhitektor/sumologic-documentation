@@ -40,7 +40,7 @@ You can build a Collector into a [Windows machine image](collector-installation-
 
 After installing Collectors, you can configure Sources directly in Sumo Logic or by providing the [Source settings in a JSON file](/docs/send-data/use-json-configure-sources). If you're using a UTF-8 encoded JSON file, you must provide the file before starting the Collector. The JSON file needs to be UTF-8 encoded.
 
-If necessary, you can use the binary package to install a Collector on MacOS. See this [Collector FAQ](/docs/send-data/collector-faq) topic for details.
+If necessary, you can use the binary package to install a Collector on Windows. See this [Collector FAQ](/docs/send-data/collector-faq) topic for details.
 
 ### Install using the UI installer
 
@@ -56,11 +56,11 @@ Run the installer on your server with root or Administrator privileges. If you a
    * Access Key: If you have a Sumo Logic access ID and key, click **Next** enter the access ID and key, and click **Next**.
    * Installation Token: The Setup Wizard has not yet been updated to provide an option for Installation Tokens. You can provide the Installation Token using the Setup Wizard Token option. Enter the **Token String** you want to use to register the Collector in the input box for a Setup Wizard one-time token.
 1. Click **Finish** to complete the setup.
-1. In Sumo Logic, select **Manage Data** > **Collection** > **Collection** and verify that you can see the Collector. Look for the name that is listed as Collector Name in the confirmation step of this procedure (the name can be customized under **Advanced Settings**). If a Collector with that name already exists, a suffix is appended to uniquely identify it. If you don’t see the Collector, check the [Error Codes](collector-installation-reference/collector-installation-error-messages.md) list to help troubleshoot.
+1. In Sumo Logic, select **Manage Data** > **Collection** > **Collection** and verify that you can see the Collector. Look for the name listed as Collector Name in the confirmation step of this procedure (the name can be customized under **Advanced Settings**). If a Collector with that name already exists, a suffix is appended to uniquely identify it. If you don’t see the Collector, check the [Error Codes](collector-installation-reference/collector-installation-error-messages.md) list to help troubleshoot.
 
 ### Install using the command line installer
 
-1. From the command prompt, run the downloaded EXE file with with the parameters that you want to configure. See [Parameters for the Command Line Installer](collector-installation-reference/parameters-command-line-installer.md) for a description of the parameters.
+1. From the command prompt, run the downloaded EXE file with the parameters that you want to configure. See [Parameters for the Command Line Installer](collector-installation-reference/parameters-command-line-installer.md) for a description of the parameters.
 1. When you see the `Finishing installation...` message you can close the command prompt window. The installation is complete.
 
 The `-console` parameter is required to display output messages from the installation.
@@ -133,7 +133,7 @@ Uninstalling a Sumo Logic installed Collector requires the following steps:
 ### Remove the Collector from Sumo Logic
 
 1. In Sumo Logic, select **Manage Data** > **Collection** > **Collection**.
-1. Find the Collector you want to remove, and click **Delete**.
+1. Find the Collector you want to remove and click **Delete**.
 1. When the Confirm dialog displays, click **OK**.
 
 A success message is displayed and the Collector is removed from the list.
